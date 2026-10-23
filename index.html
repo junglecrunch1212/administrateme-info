@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="AdministrateMe is a private household organizer with member-controlled Google connections and an authorized Chief of Staff assistant.">
+  <title>AdministrateMe — Private household organizer</title>
+  <style>
+    :root { color-scheme: light; font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #172b36; background: #f4f7f8; line-height: 1.65; }
+    * { box-sizing: border-box; }
+    body { margin: 0; }
+    a { color: #075b79; text-underline-offset: .18em; }
+    a:focus-visible { outline: 3px solid #aa5400; outline-offset: 4px; border-radius: 2px; }
+    .skip { position: absolute; left: 1rem; top: -5rem; padding: .6rem 1rem; background: white; z-index: 1; }
+    .skip:focus { top: 1rem; }
+    .wrap { max-width: 75ch; margin: 0 auto; padding: 1.5rem clamp(1rem, 4vw, 2.5rem); }
+    header { border-bottom: 1px solid #cbd7dc; background: #fff; }
+    header .wrap { display: flex; flex-wrap: wrap; gap: .8rem 2rem; align-items: center; justify-content: space-between; }
+    .brand { font-weight: 750; text-decoration: none; font-size: 1.15rem; color: #172b36; }
+    nav { display: flex; flex-wrap: wrap; gap: 1.5rem; }
+    main { padding-top: 2rem !important; padding-bottom: 3rem !important; }
+    h1, h2 { line-height: 1.2; text-wrap: balance; }
+    h1 { font-size: clamp(2rem, 6vw, 3rem); letter-spacing: -.035em; margin: .25rem 0 1rem; }
+    h2 { font-size: 1.35rem; margin: 2.2rem 0 .7rem; }
+    p, ul { margin: .8rem 0; }
+    li + li { margin-top: .6rem; }
+    .eyebrow { color: #405d69; font-weight: 650; }
+    .note { padding: 1rem 1.2rem; border-left: 4px solid #477a89; background: #e7eff2; margin-top: 1.5rem; }
+    footer { border-top: 1px solid #cbd7dc; color: #405d69; font-size: .95rem; }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header>
+    <div class="wrap">
+      <a class="brand" href="index.html" aria-label="AdministrateMe home">AdministrateMe</a>
+      <nav aria-label="Main navigation"><a href="index.html" aria-current="page">Overview</a><a href="privacy.html">Privacy</a></nav>
+    </div>
+  </header>
+  <main class="wrap" id="main">
+    <p class="eyebrow">A private household organizer</p>
+    <h1>Coordinate everyday life with control over your information.</h1>
+    <p>AdministrateMe helps invited household members organize schedules, tasks and requests with a Chief of Staff assistant, called CoS. Each member uses their own private Console and decides which connected services the application may read or write.</p>
+
+    <h2>Connect the Google services you choose</h2>
+    <p>In the member Console, open <strong>Settings → Connections → Add Google account</strong>. Review the account and select Read and Write access for each supported service before signing in with Google.</p>
+    <ul>
+      <li><strong>Gmail:</strong> read new mail; optionally enable supported sending and mail-management actions.</li>
+      <li><strong>Google Calendar:</strong> read calendars and events; optionally enable event creation and changes.</li>
+      <li><strong>Google Tasks:</strong> read lists and tasks; optionally enable task and list changes.</li>
+    </ul>
+    <p>Write access requires Read access. Connection status and permission controls remain available in Settings. Broader permissions require a fresh review with Google.</p>
+
+    <h2>Decide what CoS can use and share</h2>
+    <p>A Google connection does not automatically give CoS access to a member’s private information or share that information with another household member. CoS access depends on the member’s separate delegation and source permissions. Coordination and sharing follow the household’s configured permissions.</p>
+    <p>Enabling Write does not approve a particular message or external action. Sending still requires the application’s action approval, separate OpenClaw approval, and applicable recipient and privacy checks.</p>
+    <p>Obligation intake uses requests and material members send or forward to CoS for review. This Google connection flow keeps automatic obligation extraction from personal inboxes off.</p>
+
+    <h2>Understand how information is handled</h2>
+    <p>AdministrateMe stores synchronized records in local encrypted history. Authorized assistant work may send permitted context to the AI services configured through OpenClaw. Turning a service’s Read permission off stops further acquisition and CoS source access but preserves existing history.</p>
+    <p>Read the <a href="privacy.html">privacy notice</a> for details about Google data, assistant processing, retention and revoking access.</p>
+    <div class="note"><strong>This is an informational page.</strong> Use your household’s existing private Console to access AdministrateMe. This page does not provide a public sign-up or request access to your Google account.</div>
+  </main>
+  <footer><div class="wrap"><a href="privacy.html">Privacy notice</a> · Updated <time datetime="2026-10-23">23 October 2026</time></div></footer>
+</body>
+</html>

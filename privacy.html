@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="How AdministrateMe uses selected Google data, member permissions, authorized assistant processing and retained local history.">
+  <title>Privacy notice — AdministrateMe</title>
+  <style>
+    :root { color-scheme: light; font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #172b36; background: #f4f7f8; line-height: 1.65; }
+    * { box-sizing: border-box; }
+    body { margin: 0; }
+    a { color: #075b79; text-underline-offset: .18em; }
+    a:focus-visible { outline: 3px solid #aa5400; outline-offset: 4px; border-radius: 2px; }
+    .skip { position: absolute; left: 1rem; top: -5rem; padding: .6rem 1rem; background: white; z-index: 1; }
+    .skip:focus { top: 1rem; }
+    .wrap { max-width: 75ch; margin: 0 auto; padding: 1.5rem clamp(1rem, 4vw, 2.5rem); }
+    header { border-bottom: 1px solid #cbd7dc; background: #fff; }
+    header .wrap { display: flex; flex-wrap: wrap; gap: .8rem 2rem; align-items: center; justify-content: space-between; }
+    .brand { font-weight: 750; text-decoration: none; font-size: 1.15rem; color: #172b36; }
+    nav { display: flex; flex-wrap: wrap; gap: 1.5rem; }
+    main { padding-top: 2rem !important; padding-bottom: 3rem !important; }
+    h1, h2 { line-height: 1.2; text-wrap: balance; }
+    h1 { font-size: clamp(2rem, 6vw, 3rem); letter-spacing: -.035em; margin: .25rem 0 1rem; }
+    h2 { font-size: 1.35rem; margin: 2.2rem 0 .7rem; }
+    p, ul { margin: .8rem 0; }
+    li + li { margin-top: .6rem; }
+    .updated { color: #405d69; }
+    .note { padding: 1rem 1.2rem; border-left: 4px solid #477a89; background: #e7eff2; margin-top: 1.5rem; }
+    footer { border-top: 1px solid #cbd7dc; color: #405d69; font-size: .95rem; }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header>
+    <div class="wrap">
+      <a class="brand" href="index.html" aria-label="AdministrateMe home">AdministrateMe</a>
+      <nav aria-label="Main navigation"><a href="index.html">Overview</a><a href="privacy.html" aria-current="page">Privacy</a></nav>
+    </div>
+  </header>
+  <main class="wrap" id="main">
+    <h1>Privacy notice</h1>
+    <p class="updated">Updated <time datetime="2026-10-23">23 October 2026</time></p>
+    <p>This notice describes the member Google connection flow in AdministrateMe, a privately operated household organizer. It covers how connected information is used by the Console and its Chief of Staff assistant, CoS. The household administrator manages the installation and its configured services.</p>
+
+    <h2>Information you choose to connect</h2>
+    <p>Each adult member signs in to their own Google account and chooses services and Read/Write permissions in Settings. AdministrateMe verifies that the Google account matches the account selected during setup. It retains account identity, service selections, connection status and permission receipts to maintain and audit the connection.</p>
+    <ul>
+      <li><strong>Gmail Read</strong> allows synchronization of new mail and related message information, including sender and recipient details, subject, content and mail state. This flow does not start a historical mailbox backfill or automatic personal-inbox obligation extraction.</li>
+      <li><strong>Calendar Read</strong> allows synchronization of authorized calendars and events, including available schedule details and related event information.</li>
+      <li><strong>Tasks Read</strong> allows synchronization of authorized task lists, tasks and their state.</li>
+      <li><strong>Write</strong> permits supported changes for the selected service, such as sending or managing mail, changing events, or changing tasks and lists. Write requires Read and remains subject to action-specific authorization.</li>
+    </ul>
+    <p>Google may present broader service-level permission descriptions than a particular AdministrateMe action needs. The application’s selected service permissions and existing action controls limit which supported operations it performs.</p>
+
+    <h2>Purpose and member access</h2>
+    <p>Connected information supports the member’s household organization, schedule and task views, and authorized coordination. A connection alone does not grant CoS access to private member context. Members separately review that authority in Settings → How my CoS works.</p>
+    <p>Private information is associated with its member and source. Another member’s access or a shared schedule depends on existing sharing permissions and household agreements. Connecting an account does not automatically make its contents visible to other household members.</p>
+    <p>Enabling Write is not approval to send a specific message or disclose information. External actions follow the application’s domain authorization and separate OpenClaw approval controls, with applicable recipient restrictions and final content/privacy checks. Completed actions and their outcomes are recorded.</p>
+
+    <h2>Assistant and AI processing</h2>
+    <p>For authorized assistant work, permitted context may be sent through OpenClaw to the AI providers configured for the household’s installation. This can include connected information that the member has authorized CoS to use. Model processing can therefore occur outside the household’s computer.</p>
+    <p>The providers, models and account terms depend on the household’s current configuration. Ask the household administrator which providers are configured and review their applicable data-handling terms. This notice does not promise that those providers have a particular retention period or that they never use submitted information for training.</p>
+
+    <h2>Storage and retained history</h2>
+    <p>AdministrateMe keeps synchronized information, permission receipts and action history in local encrypted event storage. Its history is append-only so prior events and their attribution can be retained. Account and service metadata also appear in operational configuration and member views.</p>
+    <p>Turning Read off stops new acquisition for that service and prevents CoS from using that source through the connection’s context controls. It does not erase records already synchronized, related historical records or existing backups. The connection flow does not provide a complete Google-history deletion control or an automatic deletion deadline.</p>
+    <p>Ask the household administrator about retained records, backup handling and any requested removal. Disabling access cannot undo a message already sent or information already disclosed through an authorized action.</p>
+
+    <h2>Change or revoke access</h2>
+    <ul>
+      <li>Use <strong>Settings → Connections</strong> to turn Write off while retaining Read, or turn Read off to stop acquisition and CoS source access for a service.</li>
+      <li>Review or revoke CoS’s separate private-context delegation in <strong>Settings → How my CoS works</strong>.</li>
+      <li>Remove the application’s Google authorization from your <strong>Google Account → Third-party connections</strong> when you want to revoke access at Google.</li>
+    </ul>
+    <p>These controls serve different purposes. Turning a local Read or Write setting off does not itself remove the application’s authorization from your Google Account. A broader service permission requires a fresh Google consent flow.</p>
+
+    <h2>Questions and changes</h2>
+    <p>Contact your household administrator through your existing private contact channel with questions about this installation, its providers or retained information. Google’s consent screen also displays the configured application support contact.</p>
+    <p>This notice should be updated when the connection flow or the installation’s disclosed data practices change. Check the date above when reviewing it.</p>
+    <div class="note">This public notice contains product information. It does not display household account information or provide access to the private member Console.</div>
+  </main>
+  <footer><div class="wrap"><a href="index.html">Back to AdministrateMe overview</a></div></footer>
+</body>
+</html>
